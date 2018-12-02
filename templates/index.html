@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Parameters</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/lib/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/lib/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/lib/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form action = "http://localhost:5000/display" method = "post" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Please enter the parameter(s)
+				</span>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">App OS</span>
+					<div>
+						<select class="selection-2" name="os">
+							<option>Choose App OS</option>
+							<option>Android</option>
+							<option>iOS</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Genre</span>
+					<div>
+						<select class="selection-2" name="genre">
+							<option>Select genre</option>
+							<option>Games</option>
+							<option>Productivity</option>
+							<option>Weather</option>
+							<option>Shopping</option>
+							<option>Lifestyle</option>
+							<option>Finance</option>
+							<option>Music</option>
+							<option>Utilities</option>
+							<option>Travel</option>
+							<option>Social Networking</option>
+							<option>Sports</option>
+							<option>Business</option>
+							<option>Health & Fitness</option>
+							<option>Entertainment</option>
+							<option>Photo & Video</option>
+							<option>Navigation</option>
+							<option>Education</option>
+							<option>Food & Drink</option>
+							<option>News</option>
+							<option>Book</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Enter the size of the app (MB)</span>
+					<div>
+						<input type="number" name="size">
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Enter the price of the app ($)</span>
+					<div>
+						<input type="number" name="price">
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="static/lib/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/lib/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/lib/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/lib/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/lib/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="static/lib/vendor/daterangepicker/moment.min.js"></script>
+	<script src="static/lib/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="static/lib/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="static/lib/js/main.js"></script>
+
+</body>
+</html>
